@@ -1,0 +1,35 @@
+<%- include("header") %>
+<div class="container">
+    <h1>Transaction History</h1>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Sender</th>
+            <th scope="col">Recipient</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Status</th>
+            
+          </tr>
+        </thead>
+        <% transaction.slice().reverse().forEach(function(item){ %>
+            <tbody>
+                <% if(item.status == "Failed") { %>
+                    <tr style="background-color: rgb(243, 74, 69);">
+                        <th scope="row"><%= item.sender %></th>
+                        <td><%= item.recipient %></td>
+                        <td><%= item.amount %></td>
+                        <td><%= item.status %></td>
+                    </tr>
+                <% }else{ %>
+                    <tr style="background-color: rgb(125, 241, 193);">
+                        <th scope="row"><%= item.sender %></th>
+                        <td><%= item.recipient %></td>
+                        <td><%= item.amount %></td>
+                        <td><%= item.status %></td>
+                      </tr>
+               <% } %>
+                
+       <% }) %>
+      </table>
+</div>
+<%- include("footer") %>

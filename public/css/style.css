@@ -1,0 +1,101 @@
+.nav {
+  /* background-color: rgb(252, 227, 252);*/
+  background-image: -webkit-linear-gradient(#38b7ce 30%, #eaeefd 90%);
+  padding-bottom: 20px;
+}
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav-brand {
+  font-weight: bold;
+  font-size: large;
+}
+
+.navbar-dark .nav-link {
+  color: rgb(47, 5, 88);
+}
+
+.nav-link:hover {
+  color: black;
+  font-weight: 600;
+  transition: ease-in;
+}
+.box {
+  margin: auto;
+  max-width: 400px;
+  max-height: 380px;
+  border: 1px solid #38b7ce;
+  box-shadow: 2px 4px grey;
+  padding: 15px;
+}
+.box-account {
+  max-width: 800px;
+  max-height: 400px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.transfer_image {
+  text-align: center;
+}
+label {
+  font-weight: 500;
+  font-size: larger;
+  margin-top: 2%;
+}
+input {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  width: 300px;
+}
+input[type="number"] {
+  margin-left: 10px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 0%;
+}
+textarea {
+  width: 300px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.btn {
+  margin-top: 2%;
+  width: 80px;
+  background-color: rgb(68, 189, 52);
+  border: 1px solid black;
+  font-weight: 600;
+  font-size: larger;
+}
+footer {
+  margin-top: auto;
+  margin-bottom: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  text-align: bottom;
+  background-image: -webkit-linear-gradient(#eaeefd 10%, #38b7ce 100%);
+}
+
+.social-link {
+  text-align: center;
+  margin-top: 3%;
+}
+.social {
+  margin-left: 20px;
+  font-size: 20px;
+  color: black;
+}
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin: 2%;
+  font-weight: 550;
+}
